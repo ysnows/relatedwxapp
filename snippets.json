@@ -1,0 +1,11 @@
+{
+	"View组件": {
+		"prefix": "View",
+		"body": [
+			"<View>",
+			"${1}",
+			"</VIew>"
+		],
+		"description": "View组件"
+	}
+}

@@ -1,0 +1,87 @@
+{
+    "name": "ysnows.relatedwxapp",
+    "displayName": "relatedwxapp",
+    "description": "switch between wxml,wxss,js",
+    "publisher": "ysnows",
+	"icon": "logo/icon.png",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.28.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+
+    "homepage": "https://github.com/ysnows/relatedwxapp",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ysnows/relatedwxapp.git"
+	},
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension",
+    "contributes": {
+        "snippets": [
+            {
+                "language": "wxml",
+                "path": "./snippets.json"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "relatewxml",
+                "key": "shift+cmd+;",
+                "mac": "shift+cmd+;",
+                "when": "editorTextFocus"
+            },
+            {
+                "command": "relatewxss",
+                "key": "ctrl+cmd+;",
+                "mac": "ctrl+cmd+;",
+                "when": "editorTextFocus"
+            }
+        ],
+        "commands": [
+            {
+                "command": "relatewxml",
+                "title": "relatewxml"
+            },
+            {
+                "command": "relatewxss",
+                "title": "relatewxss"
+            }
+        ],
+        "languages": [
+            {
+                "id": "wxml",
+                "aliases": [
+                    "wxml",
+                    "wxml"
+                ],
+                "extensions": [
+                    "wxml"
+                ],
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "wxss",
+                "aliases": [
+                    "wxss",
+                    "wxss"
+                ],
+                "extensions": [
+                    "wxss"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "wxml",
+                "scopeName": "source.wxml",
+                "path": "./syntaxes/wxml.tmLanguage.json"
+            }
+        ]
+    }
+}
