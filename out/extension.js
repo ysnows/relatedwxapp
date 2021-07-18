@@ -23,7 +23,7 @@ function activate(context) {
 	console.log("is now active")
 	let relatewxmldisposable = vscode.commands.registerCommand('relatewxml', function (args) {
 		const document = vscode.window.activeTextEditor.document;
-		vscode.window.showInformationMessage(document.languageId)
+		// vscode.window.showInformationMessage(document.languageId)
 		const filepath = document.fileName
 		var lastindex = filepath.lastIndexOf('/')
 		var lastindexdot = filepath.lastIndexOf('.')
@@ -40,7 +40,7 @@ function activate(context) {
 
 	let relatewxssdisposable = vscode.commands.registerCommand('relatewxss', function (args) {
 		const document = vscode.window.activeTextEditor.document;
-		vscode.window.showInformationMessage(document.languageId)
+		// vscode.window.showInformationMessage(document.languageId)
 		const filepath = document.fileName
 		var lastindex = filepath.lastIndexOf('/')
 		var lastindexdot = filepath.lastIndexOf('.')
@@ -49,7 +49,7 @@ function activate(context) {
 		if (document.languageId == 'wxml') {
 			target = filedir + '/' + filename + '.wxss'
 			editOpenedFileInWindow(target)
-		}else if (document.languageId == 'wxss') {
+		}else if (document.languageId == 'wxss' || document.languageId == 'css') {
 			target = filedir + '/' + filename + '.wxml'
 			editOpenedFileInWindow(target)
 		}
