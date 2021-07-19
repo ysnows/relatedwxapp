@@ -8,6 +8,7 @@
 > ctrl+cmd+; switch between wxml and wxss
 
 ![feature](./images/feature.gif)
+[查看演示视频](./images/relatedwxapp.mp4)
 
 
 ## Release Notes
@@ -29,9 +30,8 @@
 
 
 
-https://github.com/ysnows/relatedwxapp
 
-最近写了个插件，可以通过快捷键或者命令的方式快速再 wxml,js,wxss直接切换 ；
+最近写了个插件，可以通过快捷键或者命令的方式快速在 wxml,js,wxss直接切换 ；
 
 插件地址： https://marketplace.visualstudio.com/items?itemName=ysnows.relatedwxapp
 
