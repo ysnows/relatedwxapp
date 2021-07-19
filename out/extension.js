@@ -35,7 +35,7 @@ function activate(context) {
 		} else if (document.languageId == 'javascript') {
 			target = filedir + '/' + filename + '.wxml'
 			editOpenedFileInWindow(target)
-		} else if (document.languageId == 'wxss') {
+		} else if (document.languageId == 'wxss' || document.languageId == 'css') {
 			target = filedir + '/' + filename + '.js'
 			editOpenedFileInWindow(target)
 		}
