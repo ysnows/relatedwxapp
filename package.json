@@ -4,7 +4,7 @@
     "description": "微信小程序开发者工具插件：switch between wxml,wxss,js 通过快捷键在微信小程序的wxml,wxss,js之间快速切换",
     "publisher": "ysnows",
 	"icon": "logo/icon.png",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "engines": {
         "vscode": "^1.28.0"
     },
