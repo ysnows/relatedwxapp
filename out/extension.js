@@ -35,7 +35,11 @@ function activate(context) {
 		} else if (document.languageId == 'javascript') {
 			target = filedir + '/' + filename + '.wxml'
 			editOpenedFileInWindow(target)
-		} 	});
+		} else if (document.languageId == 'wxss') {
+			target = filedir + '/' + filename + '.js'
+			editOpenedFileInWindow(target)
+		}
+	});
 	context.subscriptions.push(relatewxmldisposable);
 
 	let relatewxssdisposable = vscode.commands.registerCommand('relatewxss', function (args) {
@@ -49,8 +53,11 @@ function activate(context) {
 		if (document.languageId == 'wxml') {
 			target = filedir + '/' + filename + '.wxss'
 			editOpenedFileInWindow(target)
-		}else if (document.languageId == 'wxss' || document.languageId == 'css') {
+		} else if (document.languageId == 'wxss' || document.languageId == 'css') {
 			target = filedir + '/' + filename + '.wxml'
+			editOpenedFileInWindow(target)
+		} else if (document.languageId == 'javascript') {
+			target = filedir + '/' + filename + '.wxss'
 			editOpenedFileInWindow(target)
 		}
 
